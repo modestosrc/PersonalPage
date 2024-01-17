@@ -1,8 +1,21 @@
+@font-face {
+  font-family: "Fira Code Nerd Font";
+  font-style: normal;
+  font-weight: 400;
+  src: url("fonts/FiraCodeNerdFont-Retina.ttf");
+}
+
 p {
     color: #c6d0f5;
 }
 
+i {
+    font-style: normal;
+}
+
 body {
+    font-family: "Fira Code Nerd Font";
+    font-style: normal;
     margin: 0%;
     padding: 3px;
     background-color: #232634;
@@ -17,7 +30,7 @@ body {
 .sidebar {
     width: 15em;
     border: 1px solid #232634;
-    padding: 3px 1.5em 10px 1.3em;
+    padding: 10px 1.5em 10px 1.3em;
     background-color: #414559;
     box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
     align-content: center;
@@ -31,7 +44,7 @@ body {
 
 .sidebar i {
     font-size: 30pt;
-    padding-right: 10pt;
+    padding: 10pt;
 }
 
 .sidebar h3 {
@@ -53,15 +66,19 @@ body {
 .main {
     flex-grow: 1;
     border: 1px solid #232634;
-    padding: 3px;
+    padding: 3px 1.5em 10px 1.3em;
     background-color: #51576d;
     font-size: 94%;
     text-align: center;
-    overflow: hidden;
     box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
 }
 
 .main img{
     width: 150px;
     height: 150px;
+}
+
+.err {
+    font-style: italic;
+    color: #e78284;
 }
